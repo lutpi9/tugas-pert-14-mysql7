@@ -183,7 +183,7 @@ GROUP BY Project.id_proj;
 ```
 ***Output :***
 
-![Screenshot 2024-06-05 122701](https://github.com/nurulaisyah14/TugasPraktikum6/assets/148174512/551f4426-50c9-4dd8-8216-b73026d1bb8e)
+<img width="540" alt="image" src="https://github.com/lutpi9/tugas-pert-14-mysql7/assets/147919251/d0eecec6-0cb5-43d2-b49a-3191cf429fe9">
 
 
 ## 2. Jumlah Karyawan Tiap Departemen Yang Bekerja Pada Tiap-tiap Project.
