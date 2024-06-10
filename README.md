@@ -3,7 +3,7 @@
 
 |**Nama**|**NIM**|**Kelas**|**Matkul**|
 |----|---|-----|------|
-|Nurul Aisyah|312310476|TI.23.A5|Basis Data|
+|Lutpiah Ainus Shiddik|312310474|TI.23.A5|Basis Data|
 
 ![gambar_tugas](screenshot/Soal%20Tabel.png)
 
@@ -24,7 +24,7 @@ SELECT * FROM Perusahaan;
 
 ***Output :***
 
-![Screenshot 2024-06-05 122105](https://github.com/nurulaisyah14/TugasPraktikum6/assets/148174512/5c08a285-e327-4dc1-bab4-59f5a0a1b88a)
+<img width="295" alt="image" src="https://github.com/lutpi9/tugas-pert-14-mysql7/assets/147919251/2de5db61-cf22-41ff-b8f6-241a70fb4bc6">
 
 
 ***Query MySQL Pada Tabel Departemen***
