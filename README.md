@@ -74,7 +74,7 @@ SELECT * FROM Karyawan;
 
 ***Output :***
 
-![Screenshot 2024-06-05 122324](https://github.com/nurulaisyah14/TugasPraktikum6/assets/148174512/a50e9ff6-caae-41db-8146-062cb16a5bef)
+<img width="277" alt="image" src="https://github.com/lutpi9/tugas-pert-14-mysql7/assets/147919251/3083cf7a-3a34-47a1-b228-5eed7c54c316">
 
 
 ***Query MySQL Pada Tabel Project***
