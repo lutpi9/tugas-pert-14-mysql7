@@ -97,7 +97,7 @@ SELECT * FROM Project;
 
 ***Output :***
 
-![Screenshot 2024-06-05 122401](https://github.com/nurulaisyah14/TugasPraktikum6/assets/148174512/c6af057c-5b58-410c-a2aa-bb3142b89130)
+<img width="431" alt="image" src="https://github.com/lutpi9/tugas-pert-14-mysql7/assets/147919251/f78fcb02-30c4-4bed-83c7-05bb656c7d84">
 
 
 ***Query MySQL Pada Tabel Project Deatil***
