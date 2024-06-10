@@ -1,8 +1,15 @@
+# Tugas Praktikum { Pertemuan ke 14 } <img src=https://logos-download.com/wp-content/uploads/2016/05/MySQL_logo_logotype.png width="130px" >
 
 
+|**Nama**|**NIM**|**Kelas**|**Matkul**|
+|----|---|-----|------|
+|Nurul Aisyah|312310476|TI.23.A5|Basis Data|
 
-Query MySQL Pada Tabel Perusahaan
+![gambar_tugas](screenshot/Soal%20Tabel.png)
 
+***Query MySQL Pada Tabel Perusahaan***
+
+```
 CREATE TABLE Perusahaan(
 id_p VARCHAR(10) PRIMARY KEY,
 nama VARCHAR(45) NOT NULL,
@@ -13,12 +20,16 @@ INSERT INTO Perusahaan VALUES
 ('P01', 'Kantor Pusat', NULL),
 ('P02', 'Cabang Bekasi', NULL);
 SELECT * FROM Perusahaan;
-Output :
+```
 
-Screenshot 2024-06-05 122105
+***Output :***
 
-Query MySQL Pada Tabel Departemen
+![Screenshot 2024-06-05 122105](https://github.com/nurulaisyah14/TugasPraktikum6/assets/148174512/5c08a285-e327-4dc1-bab4-59f5a0a1b88a)
 
+
+***Query MySQL Pada Tabel Departemen***
+
+```
 CREATE TABLE Departemen(
 id_dept VARCHAR(10) PRIMARY KEY,
 nama VARCHAR(45) NOT NULL,
@@ -32,12 +43,16 @@ INSERT INTO Departemen VALUES
 ('D03', 'RnD', 'P02', NULL),
 ('D04', 'Logistik', 'P02', NULL);
 SELECT * FROM Departemen;
-Output :
+```
 
-Screenshot 2024-06-05 122256
+***Output :***
 
-Query MySQL Pada Tabel Karyawan
+![Screenshot 2024-06-05 122256](https://github.com/nurulaisyah14/TugasPraktikum6/assets/148174512/ace9a653-1f72-4ca2-a61e-a3b23dae3382)
 
+
+***Query MySQL Pada Tabel Karyawan***
+
+```
 CREATE TABLE Karyawan(
 nik VARCHAR(10) PRIMARY KEY,
 nama VARCHAR(45) NOT NULL,
@@ -55,12 +70,16 @@ INSERT INTO Karyawan VALUES
 ('N07', 'Anis', 'D02', 'N06'),
 ('N08', 'Dika', 'D02', 'N06');
 SELECT * FROM Karyawan;
-Output :
+```
 
-Screenshot 2024-06-05 122324
+***Output :***
 
-Query MySQL Pada Tabel Project
+![Screenshot 2024-06-05 122324](https://github.com/nurulaisyah14/TugasPraktikum6/assets/148174512/a50e9ff6-caae-41db-8146-062cb16a5bef)
 
+
+***Query MySQL Pada Tabel Project***
+
+```
 CREATE TABLE Project(
 id_proj VARCHAR(10) PRIMARY KEY,
 nama VARCHAR(45) NOT NULL,
@@ -74,12 +93,16 @@ INSERT INTO Project VALUES
 ('PJ02', 'B', '2019-02-15', '2019-04-10', '1'),
 ('PJ03', 'C', '2019-03-21', '2019-05-10', '1');
 SELECT * FROM Project;
-Output :
+```
 
-Screenshot 2024-06-05 122401
+***Output :***
 
-Query MySQL Pada Tabel Project Deatil
+![Screenshot 2024-06-05 122401](https://github.com/nurulaisyah14/TugasPraktikum6/assets/148174512/c6af057c-5b58-410c-a2aa-bb3142b89130)
 
+
+***Query MySQL Pada Tabel Project Deatil***
+
+```
 CREATE TABLE Project_detail(
 id_proj VARCHAR(10) NOT NULL,
 nik VARCHAR(10) NOT NULL
@@ -100,85 +123,120 @@ INSERT INTO Project_detail VALUES
 ('PJ03', 'N07'),
 ('PJ03', 'N08');
 SELECT * FROM Project_detail;
-Output :
+```
 
-Screenshot 2024-06-05 122442
+***Output :***
 
-Menampilkan Nama Manajer Tiap Departemen
+![Screenshot 2024-06-05 122442](https://github.com/nurulaisyah14/TugasPraktikum6/assets/148174512/bf727e87-e92e-486c-9819-547eebb79b45)
+
+
+## Menampilkan Nama Manajer Tiap Departemen
+
+```
 Select Departemen.nama AS Departemen, Karyawan.nama AS Manajer
 FROM Departemen
 LEFT JOIN Karyawan ON Karyawan.nik = Departemen.manajer_nik;
-Output :
+```
 
-Screenshot 2024-06-05 122520
+***Output :***
 
-Menampilkan Nama Supervisor Tiap Karyawan
+![Screenshot 2024-06-05 122520](https://github.com/nurulaisyah14/TugasPraktikum6/assets/148174512/ea186aa7-7175-432d-bd7f-9f0d0e402f2e)
+
+
+## Menampilkan Nama Supervisor Tiap Karyawan
+
+```
 SELECT Karyawan.nik, Karyawan.nama, Departemen.nama AS Departemen, Supervisor.nama AS Supervisor
 FROM Karyawan
 LEFT JOIN Karyawan AS Supervisor ON Supervisor.nik = Karyawan.sup_nik
 LEFT JOIN Departemen ON Departemen.id_dept = Karyawan.id_dept;
-Output :
+```
+***Output :***
 
-Screenshot 2024-06-05 122555
+![Screenshot 2024-06-05 122555](https://github.com/nurulaisyah14/TugasPraktikum6/assets/148174512/ea03e708-e43e-4afd-9fac-13e535a20bb7)
 
-Menampilkan Daftar Karyawan Yang Bekerja Pada Project A
+
+## Menampilkan Daftar Karyawan Yang Bekerja Pada Project A
+```
 SELECT Karyawan.nik, Karyawan.nama
 FROM Karyawan
 JOIN Project_detail ON Project_detail.nik = Karyawan.nik
 JOIN Project ON Project.id_proj = Project_detail.id_proj
 WHERE Project.nama = 'A';
-Output :
+```
+***Output :***
 
-Screenshot 2024-06-05 122628
+![Screenshot 2024-06-05 122628](https://github.com/nurulaisyah14/TugasPraktikum6/assets/148174512/f3ccef79-7321-4d8b-a10c-2eb07ad36c16)
 
-Soal Latihan Praktikum
-1. Departemen Apa Saja Yang Terlibat Dalam Tiap-tiap Project.
+
+# Soal Latihan Praktikum
+
+## 1. Departemen Apa Saja Yang Terlibat Dalam Tiap-tiap Project.
+
+```
 SELECT Project.nama AS Project, GROUP_CONCAT(Departemen.nama) AS Departemen
 FROM Project
 INNER JOIN Project_detail ON Project.id_proj = Project_detail.id_proj
 INNER JOIN Karyawan ON Project_detail.nik = Karyawan.nik
 INNER JOIN Departemen ON Karyawan.id_dept = Departemen.id_dept
 GROUP BY Project.id_proj;
-Output :
+```
+***Output :***
 
-Screenshot 2024-06-05 122701
+![Screenshot 2024-06-05 122701](https://github.com/nurulaisyah14/TugasPraktikum6/assets/148174512/551f4426-50c9-4dd8-8216-b73026d1bb8e)
 
-2. Jumlah Karyawan Tiap Departemen Yang Bekerja Pada Tiap-tiap Project.
+
+## 2. Jumlah Karyawan Tiap Departemen Yang Bekerja Pada Tiap-tiap Project.
+
+```
 SELECT Project.nama AS Project, Departemen.nama AS Departemen, COUNT(*) AS 'Jumlah Karyawan'
 FROM Project
 INNER JOIN Project_detail ON Project.id_proj = Project_detail.id_proj
 INNER JOIN Karyawan ON Project_detail.nik = Karyawan.nik
 INNER JOIN Departemen ON Karyawan.id_dept = Departemen.id_dept
 GROUP BY Project.id_proj, Departemen.id_dept;
-Output :
+```
+***Output :***
 
-Screenshot 2024-06-05 122729
+![Screenshot 2024-06-05 122729](https://github.com/nurulaisyah14/TugasPraktikum6/assets/148174512/0bad9fb8-a542-4e54-a8cd-c770880a4586)
 
-3. Ada Berapa Project Yang Sedang Dikerjakan Oleh Departemen RnD? (ket: project berjalan adalah yang statusnya 1).
+
+## 3. Ada Berapa Project Yang Sedang Dikerjakan Oleh Departemen ***RnD***? (ket: project berjalan adalah yang statusnya 1).
+
+```
 SELECT COUNT(*) AS 'Jumlah Project'
 FROM Project
 INNER JOIN Project_detail ON Project.id_proj = Project_detail.id_proj
 INNER JOIN Karyawan ON Project_detail.nik = Karyawan.nik
 INNER JOIN Departemen ON Karyawan.id_dept = Departemen.id_dept
 WHERE Departemen.nama = 'RnD' AND Project.status = 1;
-Output :
+```
+***Output :***
 
-Screenshot 2024-06-05 122800
+![Screenshot 2024-06-05 122800](https://github.com/nurulaisyah14/TugasPraktikum6/assets/148174512/d7e9568b-447b-442a-ba2f-f4db7b34883a)
 
-4. Berapa banyak Project yang sedang dikerjakan oleh Ari ?
+
+## 4. Berapa banyak Project yang sedang dikerjakan oleh Ari ?
+
+```
 SELECT COUNT(*) AS 'Jumlah Project'
 FROM Project_detail
 INNER JOIN Karyawan ON Project_detail.nik = Karyawan.nik
 WHERE Karyawan.nama = 'Ari' AND Project_detail.id_proj IN (SELECT id_proj FROM Project WHERE status = 1);
-Output :
+```
+***Output :***
 
-Screenshot 2024-06-05 122839
+![Screenshot 2024-06-05 122839](https://github.com/nurulaisyah14/TugasPraktikum6/assets/148174512/6e4fbc97-62fa-4928-adab-8d47988e4cdc)
 
-5. Siapa Saja Yang Mengerjakan Project B ?
+
+## 5. Siapa Saja Yang Mengerjakan Project B ?
+
+```
 SELECT Karyawan.nama
 FROM Project_detail
 INNER JOIN Karyawan ON Project_detail.nik = Karyawan.nik
 WHERE Project_detail.id_proj IN (SELECT id_proj FROM Project WHERE nama = 'B');
-Output :
+```
+***Output :***
 
-Screenshot 2024-06-05 122905
+![Screenshot 2024-06-05 122905](https://github.com/nurulaisyah14/TugasPraktikum6/assets/148174512/2025bbf0-a544-4a6f-86f2-04f22e2e94c3)
