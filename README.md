@@ -47,7 +47,7 @@ SELECT * FROM Departemen;
 
 ***Output :***
 
-![Screenshot 2024-06-05 122256](https://github.com/nurulaisyah14/TugasPraktikum6/assets/148174512/ace9a653-1f72-4ca2-a61e-a3b23dae3382)
+<img width="294" alt="image" src="https://github.com/lutpi9/tugas-pert-14-mysql7/assets/147919251/20a270ef-b09e-48c0-b2cb-c6ef5c79df2e">
 
 
 ***Query MySQL Pada Tabel Karyawan***
