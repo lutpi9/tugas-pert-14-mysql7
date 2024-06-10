@@ -198,7 +198,7 @@ GROUP BY Project.id_proj, Departemen.id_dept;
 ```
 ***Output :***
 
-![Screenshot 2024-06-05 122729](https://github.com/nurulaisyah14/TugasPraktikum6/assets/148174512/0bad9fb8-a542-4e54-a8cd-c770880a4586)
+<img width="626" alt="image" src="https://github.com/lutpi9/tugas-pert-14-mysql7/assets/147919251/b99f0395-9d40-421a-9649-a171e3dde213">
 
 
 ## 3. Ada Berapa Project Yang Sedang Dikerjakan Oleh Departemen ***RnD***? (ket: project berjalan adalah yang statusnya 1).
