@@ -127,7 +127,7 @@ SELECT * FROM Project_detail;
 
 ***Output :***
 
-![Screenshot 2024-06-05 122442](https://github.com/nurulaisyah14/TugasPraktikum6/assets/148174512/bf727e87-e92e-486c-9819-547eebb79b45)
+<img width="369" alt="image" src="https://github.com/lutpi9/tugas-pert-14-mysql7/assets/147919251/d177b370-36ca-47ab-836b-7401b11f2442">
 
 
 ## Menampilkan Nama Manajer Tiap Departemen
