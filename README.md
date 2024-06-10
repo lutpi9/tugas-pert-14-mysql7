@@ -140,7 +140,7 @@ LEFT JOIN Karyawan ON Karyawan.nik = Departemen.manajer_nik;
 
 ***Output :***
 
-![Screenshot 2024-06-05 122520](https://github.com/nurulaisyah14/TugasPraktikum6/assets/148174512/ea186aa7-7175-432d-bd7f-9f0d0e402f2e)
+<img width="467" alt="image" src="https://github.com/lutpi9/tugas-pert-14-mysql7/assets/147919251/d2c15b3f-6f7f-4bdf-91d6-fe2934a0db10">
 
 
 ## Menampilkan Nama Supervisor Tiap Karyawan
