@@ -166,7 +166,7 @@ WHERE Project.nama = 'A';
 ```
 ***Output :***
 
-![Screenshot 2024-06-05 122628](https://github.com/nurulaisyah14/TugasPraktikum6/assets/148174512/f3ccef79-7321-4d8b-a10c-2eb07ad36c16)
+<img width="377" alt="image" src="https://github.com/lutpi9/tugas-pert-14-mysql7/assets/147919251/8a3e0fdd-a48c-4459-8daf-b58e1e666295">
 
 
 # Soal Latihan Praktikum
