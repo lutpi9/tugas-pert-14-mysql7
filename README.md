@@ -213,7 +213,7 @@ WHERE Departemen.nama = 'RnD' AND Project.status = 1;
 ```
 ***Output :***
 
-![Screenshot 2024-06-05 122800](https://github.com/nurulaisyah14/TugasPraktikum6/assets/148174512/d7e9568b-447b-442a-ba2f-f4db7b34883a)
+<img width="439" alt="image" src="https://github.com/lutpi9/tugas-pert-14-mysql7/assets/147919251/85ca3518-a142-4b6b-99dd-1bf8668f1170">
 
 
 ## 4. Berapa banyak Project yang sedang dikerjakan oleh Ari ?
@@ -226,7 +226,7 @@ WHERE Karyawan.nama = 'Ari' AND Project_detail.id_proj IN (SELECT id_proj FROM P
 ```
 ***Output :***
 
-![Screenshot 2024-06-05 122839](https://github.com/nurulaisyah14/TugasPraktikum6/assets/148174512/6e4fbc97-62fa-4928-adab-8d47988e4cdc)
+<img width="641" alt="image" src="https://github.com/lutpi9/tugas-pert-14-mysql7/assets/147919251/06eeb283-bd1a-4782-97b2-9e5a912c6f35">
 
 
 ## 5. Siapa Saja Yang Mengerjakan Project B ?
@@ -239,4 +239,4 @@ WHERE Project_detail.id_proj IN (SELECT id_proj FROM Project WHERE nama = 'B');
 ```
 ***Output :***
 
-![Screenshot 2024-06-05 122905](https://github.com/nurulaisyah14/TugasPraktikum6/assets/148174512/2025bbf0-a544-4a6f-86f2-04f22e2e94c3)
+<img width="503" alt="image" src="https://github.com/lutpi9/tugas-pert-14-mysql7/assets/147919251/2b1b88d6-685e-4c85-81dc-63b05cfab83a">
