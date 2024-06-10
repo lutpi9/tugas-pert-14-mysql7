@@ -153,7 +153,7 @@ LEFT JOIN Departemen ON Departemen.id_dept = Karyawan.id_dept;
 ```
 ***Output :***
 
-![Screenshot 2024-06-05 122555](https://github.com/nurulaisyah14/TugasPraktikum6/assets/148174512/ea03e708-e43e-4afd-9fac-13e535a20bb7)
+<img width="669" alt="image" src="https://github.com/lutpi9/tugas-pert-14-mysql7/assets/147919251/08bd0bcf-6617-41eb-8c43-b350ebc8afae">
 
 
 ## Menampilkan Daftar Karyawan Yang Bekerja Pada Project A
