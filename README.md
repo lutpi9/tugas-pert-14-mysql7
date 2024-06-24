@@ -5,7 +5,7 @@
 |----|---|-----|------|
 |Lutpiah Ainus Shiddik|312310474|TI.23.A5|Basis Data|
 
-![gambar_tugas](screenshot/Soal%20Tabel.png)
+<img width="571" alt="image" src="https://github.com/lutpi9/tugas-pert-14-mysql7/assets/147919251/4054059d-84b4-4e6a-b2a8-f1d924333084">
 
 ***Query MySQL Pada Tabel Perusahaan***
 
